@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<title>Login</title>
-</head>
-
-<body>
-
 <?php
-require_once 'config.php';
- 
-try {
-    $adapter->authenticate();
-    $userProfile = $adapter->getUserProfile();
-    print_r($userProfile);
-    echo '<a href="logout.php">Logout</a>';
+if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
+    $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $location);
+    exit;
 }
-catch( Exception $e ){
-    echo $e->getMessage() ;
-} 
 ?>
-
-
-</body>
-
-</html>
