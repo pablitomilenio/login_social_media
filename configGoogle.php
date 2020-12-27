@@ -2,7 +2,8 @@
 require_once 'vendor/autoload.php';
  
 $config = [
-    'callback' => 'https://www.free-okr.com/index.php',
+    // 'callback' => 'https://www.free-okr.com/index.php',
+    'callback' => 'https://www.free-okr.com/login_social_media/loginGoogle.php',
     'keys'     => [
                     'id' => '36830912787-68ohb2u51ilj4pogla2kpilli4vip10n.apps.googleusercontent.com',
                     'secret' => 'b5EPiXGZGFRhsHtKO3CTpMWJ'
