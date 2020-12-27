@@ -1,3 +1,5 @@
+<body>
+Hello Google
 <?php
 require_once 'configGoogle.php';
  
@@ -10,3 +12,5 @@ try {
 catch( Exception $e ){
     echo $e->getMessage() ;
 }
+?>
+</body>

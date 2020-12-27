@@ -1,12 +1,11 @@
 <?php
-require_once 'configGoogle.php';
+  // init hybridauth
+  $hybridauth = new Hybrid_Auth( $config );
  
-try {
-    //$adapter->authenticate();
-    $userProfile = $adapter->getUserProfile();
-    print_r($userProfile);
-    echo '<a href="logout.php">Logout</a>';
-}
-catch( Exception $e ){
-    echo $e->getMessage() ;
-}
+  // try to authenticate with twitter
+  $adapter = $hybridauth->authenticate( "Google" );
+ 
+  // return Hybrid_User_Profile object intance
+  $user_profile = $adapter->getUserProfile();
+ 
+  echo "Hi there! " . $user_profile->displayName;
