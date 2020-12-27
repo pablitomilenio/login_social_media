@@ -12,5 +12,11 @@ try {
 catch( Exception $e ){
     echo $e->getMessage() ;
 }
+
+
+$user_profile = $adapter->getUserProfile();
+ 
+echo "Hi there! " . $user_profile->displayName;
+
 ?>
 </body>
