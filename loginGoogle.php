@@ -21,8 +21,10 @@ Hello Google
 require_once 'configGoogle.php';
  
 try {
+    echo "authenticating";
     $adapter->authenticate();
     $userProfile = $adapter->getUserProfile();
+    echo "fetched profile";
     print_r($userProfile);
     echo '<a href="logout.php">Logout</a>';
 }
