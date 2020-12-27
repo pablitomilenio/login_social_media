@@ -2,7 +2,7 @@
 require_once 'vendor/autoload.php';
  
 $config = [
-    'callback' => 'https://www.free-okr.com/login_social_media_/index.php',
+    'callback' => 'https://www.free-okr.com/login_social_media/index.php',
     'keys'     => [
                     'id' => '77j5b8lkj75jz9',
                     'secret' => 'bnrhv8IlrJXr5zBg'
