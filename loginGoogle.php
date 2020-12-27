@@ -1,5 +1,6 @@
 <body>
 Hello Google
+<hr>
 <?php
 
 $user_profile = $adapter->getUserProfile();
@@ -7,7 +8,13 @@ $user_profile = $adapter->getUserProfile();
 print_r($userProfile);
 
 echo "Hi there! " . $user_profile->displayName;
+?>
 
+<br><br>
+2
+<hr>
+
+<?php
 
 
 
