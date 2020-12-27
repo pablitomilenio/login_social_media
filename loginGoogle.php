@@ -3,8 +3,12 @@ Hello Google
 <?php
 
 $user_profile = $adapter->getUserProfile();
- 
+
+print_r($userProfile);
+
 echo "Hi there! " . $user_profile->displayName;
+
+
 
 
 require_once 'configGoogle.php';
