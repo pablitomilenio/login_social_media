@@ -8,7 +8,7 @@ Hello Google
 //print_r($userProfile);
 
 //echo "Hi there! " . $user_profile->displayName;
-print_r($_ENV);
+print_r($_SESSION);
 ?>
 
 <br><br>
