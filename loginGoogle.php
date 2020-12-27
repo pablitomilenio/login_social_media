@@ -1,6 +1,12 @@
 <body>
 Hello Google
 <?php
+
+$user_profile = $adapter->getUserProfile();
+ 
+echo "Hi there! " . $user_profile->displayName;
+
+
 require_once 'configGoogle.php';
  
 try {
@@ -14,9 +20,6 @@ catch( Exception $e ){
 }
 
 
-$user_profile = $adapter->getUserProfile();
- 
-echo "Hi there! " . $user_profile->displayName;
 
 ?>
 </body>
