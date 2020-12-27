@@ -3,11 +3,11 @@ Hello Google
 <hr>
 <?php
 
-$user_profile = $adapter->getUserProfile();
+//$user_profile = $adapter->getUserProfile();
 
-print_r($userProfile);
+//print_r($userProfile);
 
-echo "Hi there! " . $user_profile->displayName;
+//echo "Hi there! " . $user_profile->displayName;
 ?>
 
 <br><br>
