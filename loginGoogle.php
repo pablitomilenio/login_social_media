@@ -22,7 +22,7 @@ require_once 'configGoogle.php';
  
 try {
     echo "authenticating";
-    $adapter->authenticate();
+    $adapter->authenticate( "Google" );
     $userProfile = $adapter->getUserProfile();
     echo "fetched profile";
     print_r($userProfile);
