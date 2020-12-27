@@ -14,7 +14,7 @@ return
          // facebook
             "Facebook" => array ( // 'id' is your facebook application id
                "enabled" => true,
-               "keys" => array ( "id" => "", "secret" => "" ),
+               "keys" => array ( "id" => "775635976720300", "secret" => "ba2a4f02524d1183609a9da289f31f73" ),
                "scope" => "email, user_about_me, user_birthday, user_hometown" // optional
             ),
  
